@@ -1,7 +1,5 @@
 import { cn } from "../lib/utils.ts";
-import {CardSpotlight} from "@/components/ui/card-spotlight.tsx";
 import {Calendar} from "lucide-react";
-import {HoverBorderGradient} from "@/components/ui/hover-border-gradient.tsx";
 import {Separator} from "@/components/ui/separator.tsx";
 import './App.css';
 import Sidebar from "@/components/Sidebar.tsx";
@@ -69,7 +67,7 @@ function Home() {
                       <p className="text-zinc-800 font-display font-medium dark:text-zinc-200 leading-7">Here is a
                           selection of my most significant personal/freelance projects</p>
                       <div className="w-full h-full mt-2 flex flex-col gap-6">
-                          <CardSpotlight
+                          <div
                               className="w-full rounded-xl bg-[#2a3038] py-6 px-8 border dark:border-zinc-600">
                               <h3 className="text-xl font-bold font-display relative z-20 text-white">
                                   TournaMaster
@@ -83,8 +81,32 @@ function Home() {
                                   </div>
                                   <a className="text-emerald-500" href="/">imranesallak.com</a>
                               </div>
-                          </CardSpotlight>
-                          <CardSpotlight
+                          </div>
+                          <div
+                              className="w-full rounded-xl bg-[#2a3038] py-6 px-8 border dark:border-zinc-600">
+                              <h3 className="text-xl font-bold font-display relative z-20 text-white">
+                                  TournaMaster
+                              </h3>
+                              <div className="mt-2 space-y-2">
+                                  <div className="flex items-center gap-2 text-sm">
+                                      <Calendar className="text-zinc-400 h-5 w-5"/>
+                                      <p className="text-zinc-400">Feb 2025 - Apr 2025</p>
+                                      <p className="text-zinc-400">|</p>
+                                      <p className="text-zinc-400">2 months</p>
+                                  </div>
+                                  <a className="text-emerald-500"
+                                        href="https://apimobile.testingtest.fr/login">apimobile.testingtest.fr</a>
+                              </div>
+                              <div className="mt-6">
+                                  <p className="text-zinc-800 font-display font-medium dark:text-zinc-200 leading-7">
+                                      I'm also a member of a collective named 99Stud, which gathers artists and
+                                      developers.
+                                  </p>
+                              </div>
+                              <div className="mt-4">
+                              </div>
+                          </div>
+                          <div
                               className="w-full rounded-xl bg-[#2a3038] py-6 px-8 border dark:border-zinc-600">
                               <h3 className="text-xl font-bold font-display relative z-20 text-white">
                                   TournaMaster
@@ -107,49 +129,9 @@ function Home() {
                               </div>
                               <div className="mt-4">
                                   <div className="flex">
-                                      <HoverBorderGradient
-                                          containerClassName="rounded-full"
-                                          as="button"
-                                          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                                      >
-                                          <span>Aceternity UI</span>
-                                      </HoverBorderGradient>
                                   </div>
                               </div>
-                          </CardSpotlight>
-                          <CardSpotlight
-                              className="w-full rounded-xl bg-[#2a3038] py-6 px-8 border dark:border-zinc-600">
-                              <h3 className="text-xl font-bold font-display relative z-20 text-white">
-                                  TournaMaster
-                              </h3>
-                              <div className="mt-2 space-y-2">
-                                  <div className="flex items-center gap-2 text-sm">
-                                      <Calendar className="text-zinc-400 h-5 w-5"/>
-                                      <p className="text-zinc-400">Feb 2025 - Apr 2025</p>
-                                      <p className="text-zinc-400">|</p>
-                                      <p className="text-zinc-400">2 months</p>
-                                  </div>
-                                  <a className="text-emerald-500"
-                                        href="https://apimobile.testingtest.fr/login">apimobile.testingtest.fr</a>
-                              </div>
-                              <div className="mt-6">
-                                  <p className="text-zinc-800 font-display font-medium dark:text-zinc-200 leading-7">
-                                      I'm also a member of a collective named 99Stud, which gathers artists and
-                                      developers.
-                                  </p>
-                              </div>
-                              <div className="mt-4">
-                                  <div className="flex">
-                                      <HoverBorderGradient
-                                          containerClassName="rounded-full"
-                                          as="button"
-                                          className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-                                      >
-                                          <span>Aceternity UI</span>
-                                      </HoverBorderGradient>
-                                  </div>
-                              </div>
-                          </CardSpotlight>
+                          </div>
                       </div>
                   </div>
               </div>
