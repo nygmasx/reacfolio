@@ -1,27 +1,20 @@
 import {useState} from 'react';
 import {Sidebar, SidebarBody, SidebarLink} from "@/components/ui/sidebar";
-import {IconHome, IconApps} from "@tabler/icons-react";
+import {IconHome} from "@tabler/icons-react";
 import {NfcIcon} from "lucide-react";
 function CustomSidebar() {
 
     const links = [
         {
             label: "Accueil",
-            href: "#",
+            href: "/",
             icon: (
                 <IconHome className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
             ),
         },
         {
-            label: "Expériences",
-            href: "#",
-            icon: (
-                <IconApps className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
-            ),
-        },
-        {
             label: "Contact",
-            href: "#",
+            href: "https://cal.com/imrane-sallak/30min",
             icon: (
                 <NfcIcon className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
             ),
